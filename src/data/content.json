@@ -1,0 +1,234 @@
+{
+  "company": {
+    "name": "Hasync.",
+    "shortDescription": "Engineering future-ready software solutions for the world's most ambitious companies.",
+    "email": "hello@luminescent.dev",
+    "phone": "+1 (555) 123-4567",
+    "address": "1200 Tech Boulevard, Suite 400, San Francisco, CA 94107",
+    "copyright": "© 2026 Hasync - Web & Software Studio . All rights reserved."
+  },
+  "navigation": [
+    { "label": "Services", "href": "/services" },
+    { "label": "Portfolio", "href": "/portfolio" },
+    { "label": "About", "href": "/about" },
+    { "label": "Insights", "href": "/insights" }
+  ],
+  "home": {
+    "hero": {
+      "badge": "______FUTURE-DRIVEN INTELLIGENCE",
+      "titlePart1": "Architecting",
+      "titleHighlight": "Digital",
+      "titlePart2": "Transformation.",
+      "description": "We build high-performance Web, Mobile, and AI solutions that define technical excellence. No templates, just engineered precision."
+    },
+    "trustedBy": ["Aether", "Nexus", "Crypton", "Vanguard", "OmniHealth"],
+    "portfolioTitle": "Latest Projects",
+    "portfolioSubtitle": "We don't just ship code; we deliver competitive advantages across industries.",
+    "process": {
+      "title": "Our Process",
+      "description": "Precision engineering meets rapid iteration. We build software that grows with you.",
+      "steps": [
+        {
+          "title": "Discovery",
+          "description": "We dive deep into your business logic, user needs, and technical constraints."
+        },
+        {
+          "title": "Design",
+          "description": "Crafting user-centric interfaces and scalable system architectures."
+        },
+        {
+          "title": "Development",
+          "description": "Writing clean, robust, and well-documented code across the stack."
+        },
+        {
+          "title": "Deployment",
+          "description": "Seamless CI/CD pipelines and long-term scaling support."
+        }
+      ]
+    },
+    "testimonial": {
+      "quote": "Luminescent transformed our legacy systems into a modern cloud-native powerhouse. Their attention to technical detail is unmatched in the agency space.",
+      "author": "Marcus Chen",
+      "role": "CTO, Nexus Corp"
+    }
+  },
+  "portfolio": {
+    "title": "Our Work",
+    "description": "Explore our defining shipments. We architect solutions that stand the test of scale.",
+    "projects": [
+      {
+        "id": "lumina-banking",
+        "title": "LuminaBanking App",
+        "description": "Custom headless financial implementation with sub-second page loads.",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "category": "FinTech",
+        "featured": true,
+        "type": "tall"
+      },
+      {
+        "id": "predictive-analytics",
+        "title": "Predictive Analytics Protocol",
+        "description": "Scalable smart contract infrastructure for high-volume data trading.",
+        "image": "https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "category": "Data Science",
+        "featured": true,
+        "type": "small-blue"
+      },
+      {
+        "id": "fintech-dash",
+        "title": "Fintech Dashboard",
+        "description": "Real-time analytics portal for modern enterprises.",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "category": "Enterprise",
+        "featured": true,
+        "type": "wide"
+      },
+      {
+        "id": "web3-infra",
+        "title": "Web3 Infrastructure",
+        "description": "Glow-up for decentralized networks.",
+        "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "category": "Blockchain",
+        "featured": true,
+        "type": "dark"
+      }
+    ]
+  },
+  "services": {
+    "title": "Technical Capabilities",
+    "description": "We are a full-stack engineering team capable of building end-to-end platforms.",
+    "list": [
+      {
+        "title": "Modern Web Development",
+        "description": "React, Next.js architectures optimized for core web vitals.",
+        "icon": "Layout"
+      },
+      {
+        "title": "Mobile Engineering",
+        "description": "Native-grade iOS and Android applications.",
+        "icon": "Smartphone"
+      },
+      {
+        "title": "AI & Machine Learning",
+        "description": "Large language model integrations and predictive analytics.",
+        "icon": "Cpu"
+      },
+      {
+        "title": "Cloud Architecture",
+        "description": "AWS and GCP infrastructure automation.",
+        "icon": "Cloud"
+      }
+    ]
+  },
+  "about": {
+    "title": "Architecting the Future Together",
+    "description": "We blend high-performance engineering with intentional design to build digital ecosystems that don't just solve problems—they define industries.",
+    "story": {
+      "title": "Our Story",
+      "p1": "Lumina wasn't born in a boardroom; it was forged in the late-night sessions of three developers who believed that code should be as elegant as the hardware it runs on.",
+      "p2": "Since 2018, we've scaled from a boutique studio into a powerhouse agency, serving global disruptors. Our growth is measured not just in headcount, but in the complexity of the challenges we conquer."
+    },
+    "milestones": [
+      {
+        "year": "2018",
+        "title": "The Foundation",
+        "description": "Three founders, one shared apartment, and a vision for clean, modular software architecture."
+      },
+      {
+        "year": "2021",
+        "title": "The Expansion",
+        "description": "Opening our first global office and launching 'The Foundry' design system internal framework."
+      },
+      {
+        "year": "2024",
+        "title": "The Legacy",
+        "description": "Leading the shift toward AI-integrated product design for Fortune 500 partners."
+      }
+    ],
+    "leadership": [
+      {
+        "name": "Alex Mercer",
+        "role": "Chief Executive Officer",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "name": "Elena Rodriguez",
+        "role": "Head of Design",
+        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "name": "Marcus Chen",
+        "role": "Chief Technology Officer",
+        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "name": "Sarah Jenkins",
+        "role": "VP of Operations",
+        "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      }
+    ],
+    "values": [
+      {
+        "title": "Technical Excellence",
+        "description": "We don't cut corners. Our code is built to be scalable, secure, and maintainable for years to come.",
+        "icon": "Terminal"
+      },
+      {
+        "title": "Human-Centric Design",
+        "description": "Technology is a tool for people. We prioritize empathy and usability in every pixel we place.",
+        "icon": "Users"
+      },
+      {
+        "title": "Collaboration",
+        "description": "The best solutions emerge from open dialogue between our experts and our partners.",
+        "icon": "Hub"
+      }
+    ]
+  },
+  "insights": {
+    "title": "Technical Perspectives",
+    "description": "Deep dives into architecture, code culture, and the frontier of digital engineering.",
+    "articles": [
+      {
+        "slug": "scaling-ai-infrastructure",
+        "title": "Architecting the Future: How Luminescent Scales AI Infrastructures",
+        "excerpt": "A deep dive into our proprietary distributed system architecture that handles petabytes of data for modern generative models while maintaining zero-latency performance.",
+        "author": "Marcus Thorne",
+        "date": "June 24, 2024",
+        "image": "https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "slug": "rust-for-microservices",
+        "title": "Beyond the Monolith: Embracing Rust for Critical Microservices",
+        "excerpt": "Explore how we migrated our core payment gateway to Rust to achieve memory safety without compromising on raw execution speed.",
+        "author": "Sarah Chen",
+        "date": "June 12, 2024",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "slug": "llm-quantization-edge",
+        "title": "Quantizing Large Language Models for Edge Deployment",
+        "excerpt": "Our research on bringing GPT-scale intelligence to mobile devices through advanced 4-bit quantization techniques.",
+        "author": "David Miller",
+        "date": "May 28, 2024",
+        "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "slug": "cognitive-load-enterprise",
+        "title": "Cognitive Load in Enterprise Software",
+        "excerpt": "Designing for expert users requires a different mental model. Here is how we balance power and simplicity.",
+        "author": "Elena Rodriguez",
+        "date": "June 05, 2024",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "slug": "zero-trust-architecture",
+        "title": "Zero Trust Architecture in Practice",
+        "excerpt": "How we implement secure identities across multi-cloud environments without degrading developer experience.",
+        "author": "Alex Rivera",
+        "date": "May 15, 2024",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      }
+    ]
+  }
+}

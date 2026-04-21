@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hasync. - Digital Solutions & Software Engineering
 
-## Getting Started
+**Hasync.** is a premium, high-performance agency website built for the future of digital transformation. We specialize in engineering precision software solutions, including modern Web, Mobile, and AI-driven platforms.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Key Features
+
+*   **Next.js 16+ & React 19**: Leveraging the cutting-edge capabilities of the latest React ecosystem.
+*   **Tailwind CSS 4**: Utilizing the newest utility-first CSS framework for ultra-fast, responsive styling.
+*   **Framer Motion**: Smooth, high-end animations that elevate the user experience.
+*   **Dynamic Content**: Architecture driven by a central JSON data system (`src/data/content.json`) for easy updates.
+*   **SEO Optimized**: Built-in support for dynamic sitemaps, robots.txt, and metadata optimization.
+*   **Enterprise-Ready UI**: Includes pages for Services, Portfolio, Insights, Careers, and more.
+*   **Modern Aesthetics**: Glassmorphism, bento grids, and high-fidelity typography.
+
+## 🛠️ Technology Stack
+
+*   **Framework**: [Next.js 16+](https://nextjs.org/) (App Router)
+*   **Library**: [React 19](https://react.dev/)
+*   **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+*   **Animations**: [Framer Motion](https://www.framer.com/motion/)
+*   **Icons**: [Lucide React](https://lucide.dev/)
+*   **Language**: [TypeScript](https://www.typescriptlang.org/)
+*   **Typeface**: [Geist](https://vercel.com/font)
+
+## 📁 Project Structure
+
+```text
+agency/
+├── public/              # Static assets (images, icons, brand assets)
+├── src/
+│   ├── app/             # Application Router (pages, layouts, and API)
+│   ├── components/      # Modular, reusable React components
+│   ├── data/            # Local data store (content.json)
+│   └── context/         # Global state management
+├── package.json         # Project manifests and scripts
+└── tsconfig.json        # TypeScript configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🏁 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+*   Node.js 18.17 or later
+*   npm, yarn, pnpm, or bun
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/hasync/agency-web.git
+    cd agency
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3.  **Run the development server**:
+    ```bash
+    npm run dev
+    ```
 
-## Deploy on Vercel
+4.  **View the project**:
+    Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📜 Available Scripts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*   `npm run dev`: Fires up the development server with Hot Module Replacement.
+*   `npm run build`: Compiles the application for production.
+*   `npm run start`: Serves the production build.
+*   `npm run lint`: Performs static analysis to ensure code quality.
+
+## 🚢 Deployment
+
+Optimized for deployment on [Vercel](https://vercel.com/) with zero configuration required.
+
+---
+
+### Giới thiệu (Vietnamese)
+**Hasync.** là một nền tảng website chuyên nghiệp dành cho các Agency, được xây dựng trên nền tảng công nghệ mới nhất (Next.js 16, React 19). Thiết kế tập trung vào hiệu suất cao, trải nghiệm người dùng mượt mà với các hiệu ứng chuyển động cao cấp và tối ưu hóa SEO toàn diện.
+
+Built with technical excellence by **Hasync Team**.

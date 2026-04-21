@@ -5,17 +5,17 @@ import { ArrowRight, MapPin, Clock } from "lucide-react";
 import Link from "next/link";
 
 export default function CareersPage() {
-  const { careers } = content;
+  const { careers, company } = content;
 
   return (
     <main className="min-h-screen pt-40 pb-20 px-6">
       <div className="max-w-7xl mx-auto space-y-24">
-        
+
         <header className="max-w-3xl space-y-8">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-sm font-medium text-tertiary border border-outline-variant/30">
-            Careers at Luminescent
+            Careers at {company.name}
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight -tracking-[0.02em]">
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-[-0.02em]">
             {careers.title}
           </h1>
           <p className="text-xl text-on-surface-variant max-w-2xl leading-relaxed">

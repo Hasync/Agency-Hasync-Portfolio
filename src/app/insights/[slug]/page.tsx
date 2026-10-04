@@ -87,11 +87,11 @@ export default function BlogDetailPage() {
         <footer className="pt-20 border-t border-outline-variant/20">
            <div className="flex flex-col md:flex-row items-center justify-between gap-8 bg-surface-container-low p-12 rounded-[2.5rem]">
               <div className="space-y-4">
-                <h4 className="text-3xl font-bold text-on-surface">Ready to build your next big thing?</h4>
-                <p className="text-lg text-on-surface-variant">Let's turn these insights into your competitive advantage.</p>
+                <h4 className="text-3xl font-bold text-on-surface">Bạn muốn áp dụng ý tưởng này?</h4>
+                <p className="text-lg text-on-surface-variant">Elysium có thể tư vấn cách biến nhu cầu của bạn thành website, chatbot hoặc AI tool thực tế.</p>
               </div>
               <Link href="/contact" className="btn-primary whitespace-nowrap">
-                Start a Conversation
+                Nhận tư vấn
               </Link>
            </div>
         </footer>

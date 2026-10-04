@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Insights",
-  description: "Technical perspectives on AI infrastructure, Rust for microservices, and modern software engineering cultures by Hasync.",
+  title: "Chia sẻ",
+  description: "Góc chia sẻ về thiết kế website, AI ứng dụng, chatbot và automation từ Elysium.",
   openGraph: {
-    title: "Technical Engineering Blog & Insights | Hasync",
-    description: "Deep dives into architecture, code culture, and the frontier of digital engineering.",
+    title: "Góc chia sẻ Website & AI | Elysium",
+    description: "Kinh nghiệm triển khai website, chatbot và tự động hóa cho cá nhân, shop và doanh nghiệp.",
   },
 };
 

@@ -18,12 +18,12 @@ export default function ContactPage() {
             className="space-y-16"
           >
             <header className="max-w-xl space-y-8">
-              <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase">Contact Us</span>
+              <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase">Liên hệ Elysium</span>
               <h1 className="text-5xl md:text-7xl font-manrope font-extrabold leading-[1.1] tracking-tighter">
-                Let's build your <br /><span className="text-gradient">vision</span> together.
+                Cùng xây giải pháp <br /><span className="text-gradient">Website & AI</span> cho bạn.
               </h1>
               <p className="text-xl text-on-surface-variant leading-relaxed font-light">
-                Ready to redefine your technical architecture? Drop us a line and let's start the conversation.
+                Bạn cần website, chatbot, AI tool hay automation? Gửi yêu cầu hoặc gọi trực tiếp để Elysium tư vấn hướng triển khai phù hợp.
               </p>
             </header>
 
@@ -43,7 +43,7 @@ export default function ContactPage() {
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-on-surface-variant uppercase tracking-widest mb-1">Phone</h4>
+                  <h4 className="text-sm font-bold text-on-surface-variant uppercase tracking-widest mb-1">Điện thoại / Zalo</h4>
                   <a href={`tel:${company.phone}`} className="text-2xl font-manrope font-bold hover:text-primary transition-colors">{company.phone}</a>
                 </div>
               </div>
@@ -53,7 +53,7 @@ export default function ContactPage() {
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-on-surface-variant uppercase tracking-widest mb-1">Office</h4>
+                  <h4 className="text-sm font-bold text-on-surface-variant uppercase tracking-widest mb-1">Khu vực hỗ trợ</h4>
                   <p className="text-xl font-manrope font-bold max-w-sm">{company.address}</p>
                 </div>
               </div>
@@ -69,27 +69,27 @@ export default function ContactPage() {
             <form className="space-y-8 relative z-10" onSubmit={(e) => e.preventDefault()}>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div className="space-y-3">
-                  <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant">First Name</label>
+                  <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Tên của bạn</label>
                   <input type="text" className="w-full border-b-2 border-outline-variant/30 px-0 py-3 focus:outline-none focus:border-primary transition-colors bg-transparent" placeholder="Jane" />
                 </div>
                 <div className="space-y-3">
-                  <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Last Name</label>
+                  <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Nhu cầu</label>
                   <input type="text" className="w-full border-b-2 border-outline-variant/30 px-0 py-3 focus:outline-none focus:border-primary transition-colors bg-transparent" placeholder="Doe" />
                 </div>
               </div>
 
               <div className="space-y-3">
-                <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Work Email</label>
+                <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Email liên hệ</label>
                 <input type="email" className="w-full border-b-2 border-outline-variant/30 px-0 py-3 focus:outline-none focus:border-primary transition-colors bg-transparent" placeholder="jane@company.com" />
               </div>
 
               <div className="space-y-3">
-                <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Project Details</label>
+                <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Mô tả yêu cầu</label>
                 <textarea rows={4} className="w-full border-b-2 border-outline-variant/30 px-0 py-3 focus:outline-none focus:border-primary transition-colors resize-none bg-transparent" placeholder="Tell us about your goals..." />
               </div>
 
               <button type="submit" className="w-full signature-gradient text-white rounded-2xl! py-5 text-xl font-bold flex items-center justify-center gap-3 hover:opacity-90 transition-all active:scale-[0.98]">
-                Send Message <Send className="w-5 h-5" />
+                Gửi yêu cầu <Send className="w-5 h-5" />
               </button>
             </form>
           </motion.div>

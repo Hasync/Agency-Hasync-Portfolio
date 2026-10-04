@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Careers",
-  description: "Join Hasync's team of engineers, designers, and visionaries. Help us architect the future of digital engineering.",
+  title: "Cộng tác",
+  description: "Cùng Elysium xây dựng website, AI tool, chatbot và automation hữu ích cho khách hàng.",
   openGraph: {
-    title: "Careers at Hasync | Join Our Engineering Team",
-    description: "Discover open roles and a culture where technical excellence and curiosity are celebrated.",
+    title: "Cộng tác cùng Elysium",
+    description: "Tìm kiếm cộng sự yêu thích thiết kế, lập trình và AI ứng dụng.",
   },
 };
 

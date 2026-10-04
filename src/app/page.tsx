@@ -1,13 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Bolt, Lightbulb, DraftingCompass, Code2, Rocket, Quote, Send, ArrowUpRight } from "lucide-react";
+import { ArrowRight, Bot, Lightbulb, DraftingCompass, Code2, Rocket, Quote, ArrowUpRight, Cpu, MessageSquare, Settings, Users } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import content from "@/data/content.json";
 
 export default function Home() {
-  const { home, portfolio } = content;
+  const { home, portfolio, services, company, about } = content;
 
   return (
     <main className="overflow-x-hidden">
@@ -30,12 +30,12 @@ export default function Home() {
               {home.hero.description}
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <button className="btn-primary px-10 py-4 text-lg">
-                View Our Work
-              </button>
-              <button className="btn-ghost px-10 py-4 text-lg">
-                Book a Consult
-              </button>
+              <Link href="/portfolio" className="btn-primary px-10 py-4 text-lg">
+                Xem dự án
+              </Link>
+              <a href="tel:0338994373" className="btn-ghost px-10 py-4 text-lg">
+                Gọi 0338994373
+              </a>
             </div>
           </motion.div>
 
@@ -49,8 +49,8 @@ export default function Home() {
             <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-tertiary/10 rounded-full blur-[100px]"></div>
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-12 border-white/50 aspect-square">
               <Image
-                src="/hasync.png"
-                alt="Hasync - Digital Solutions & Software Engineering"
+                src="/bannerHero.png"
+                alt="Elysium - Thiết kế Website & AI theo yêu cầu"
                 fill
                 sizes="(max-width: 768px) 100vw, 600px"
                 priority
@@ -64,8 +64,8 @@ export default function Home() {
       {/* Trust Bar */}
       <section className="bg-surface-container-low py-12">
         <div className="max-w-7xl mx-auto px-8">
-          <p className="text-center text-xs font-bold uppercase tracking-widest text-outline mb-10">Trusted by Global Innovators</p>
-          <div className="flex flex-wrap justify-center gap-12 md:gap-24 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+          <p className="text-center text-xs font-bold uppercase tracking-widest text-outline mb-10">Dịch vụ Elysium tập trung triển khai</p>
+          <div className="flex flex-wrap justify-center gap-12 md:gap-24 opacity-50 hover:opacity-80 transition-all duration-500">
             {home.trustedBy.map((brand) => (
               <div key={brand} className="flex items-center gap-2">
                 <div className="font-bold text-xl tracking-tighter">{brand}</div>
@@ -75,15 +75,74 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Bento Grid Projects */}
+      {/* Services */}
       <section className="py-32 px-8 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
           <div className="max-w-2xl">
-            <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">Latest Projects</h2>
+            <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">{services.title}</h2>
+            <p className="text-lg text-on-surface-variant">{services.description}</p>
+          </div>
+          <Link href="/services" className="group flex items-center gap-2 text-primary font-bold text-lg">
+            Xem chi tiết dịch vụ
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {services.list.map((service, idx) => (
+            <motion.div
+              key={service.title}
+              whileHover={{ y: -5 }}
+              className="rounded-3xl bg-white p-8 border border-outline-variant/20 shadow-sm hover:shadow-xl transition-all duration-500"
+            >
+              <div className="w-14 h-14 rounded-2xl bg-primary-container/10 flex items-center justify-center text-primary mb-6">
+                {idx === 0 && <Code2 className="w-7 h-7" />}
+                {idx === 1 && <Cpu className="w-7 h-7" />}
+                {idx === 2 && <Bot className="w-7 h-7" />}
+                {idx === 3 && <Settings className="w-7 h-7" />}
+                {idx === 4 && <MessageSquare className="w-7 h-7" />}
+                {idx === 5 && <Users className="w-7 h-7" />}
+              </div>
+              <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
+              <p className="text-on-surface-variant leading-relaxed">{service.description}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* Team Summary */}
+      <section className="px-8 pb-32 max-w-7xl mx-auto">
+        <div className="bg-on-surface rounded-[3rem] p-10 md:p-16 relative overflow-hidden grid md:grid-cols-2 gap-12 items-center">
+          <div className="absolute -right-20 -top-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl"></div>
+          <div className="relative z-10">
+            <span className="inline-block text-tertiary font-bold text-xs uppercase tracking-widest mb-4">Đội ngũ Elysium</span>
+            <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-6">{about.title}</h2>
+            <p className="text-white/70 text-lg leading-relaxed mb-8">{about.description}</p>
+            <a href={`tel:${company.phone}`} className="btn-primary inline-flex px-10 py-4 text-lg">
+              Gọi đội ngũ: {company.phone}
+            </a>
+          </div>
+          <div className="relative z-10 rounded-3xl overflow-hidden aspect-video md:aspect-square shadow-2xl border border-white/10">
+            <Image
+              src="/bannerHero.png"
+              alt="Đội ngũ Elysium"
+              fill
+              sizes="(max-width: 768px) 100vw, 600px"
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Bento Grid Projects */}
+      <section className="pb-32 px-8 max-w-7xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+          <div className="max-w-2xl">
+            <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">{home.portfolioTitle}</h2>
             <p className="text-lg text-on-surface-variant">{home.portfolioSubtitle}</p>
           </div>
           <Link href="/portfolio" className="group flex items-center gap-2 text-primary font-bold text-lg">
-            Browse All Case Studies
+Xem tất cả dự án
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
@@ -212,10 +271,10 @@ export default function Home() {
             </div>
             <div className="relative z-10 grid md:grid-cols-2 gap-16 items-center">
               <div>
-                <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-8">What our partners say about us.</h2>
-                <button className="bg-tertiary text-white px-8 py-3 rounded-full font-bold hover:bg-tertiary-container transition-colors">
-                  Read More Reviews
-                </button>
+                <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-8">Khách hàng nói gì về Elysium.</h2>
+                <Link href="/contact" className="bg-tertiary text-white px-8 py-3 rounded-full font-bold hover:bg-tertiary-container transition-colors inline-flex">
+                  Tư vấn dự án
+                </Link>
               </div>
               <div className="space-y-8">
                 <div className="bg-white/5 border border-white/10 backdrop-blur-md p-8 rounded-3xl">
@@ -248,14 +307,14 @@ export default function Home() {
       <section className="py-32 px-8">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-5xl md:text-7xl font-extrabold tracking-tighter mb-10 leading-tight">
-            Ready to build your <span className="text-primary italic">next</span> breakthrough?
+Sẵn sàng xây website hoặc <span className="text-primary italic">AI tool</span> cho bạn?
           </h2>
           <div className="flex flex-col md:flex-row justify-center gap-6">
             <Link href="/contact" className="btn-primary px-12 py-5 text-xl">
-              Start Your Project
+Nhận tư vấn
             </Link>
             <Link href="/portfolio" className="btn-ghost px-12 py-5 text-xl">
-              View Our Work
+Xem dự án mẫu
             </Link>
           </div>
         </div>

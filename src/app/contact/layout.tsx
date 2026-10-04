@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
-  description: "Ready to build your next technical breakthrough? Get in touch with Hasync for your software development and AI engineering needs.",
+  title: "Liên hệ",
+  description: "Liên hệ Elysium để tư vấn thiết kế website, AI tool, chatbot và automation theo yêu cầu.",
   openGraph: {
-    title: "Work With Hasync | Start Your Project",
-    description: "Connect with our engineering team to architect and build high-performance digital products.",
+    title: "Liên hệ Elysium | Tư vấn Website & AI",
+    description: "Gọi 0338994373 hoặc gửi yêu cầu để được tư vấn giải pháp Website & AI phù hợp.",
   },
 };
 

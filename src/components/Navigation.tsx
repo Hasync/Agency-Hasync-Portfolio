@@ -29,8 +29,9 @@ export function Navigation() {
     <>
       <header className="fixed top-0 left-0 right-0 z-50 glass-nav h-20 flex items-center">
         <div className="max-w-7xl mx-auto w-full px-8 flex items-center justify-between">
-          <Link href="/" className="font-manrope font-extrabold text-2xl text-primary tracking-tighter z-50">
-            {data.company.name}
+          <Link href="/" className="font-manrope z-50 leading-none">
+            <span className="block text-2xl font-extrabold text-primary tracking-[0.18em] uppercase">Elysium</span>
+            <span className="block text-[0.55rem] font-bold text-on-surface-variant tracking-[0.28em] uppercase mt-1">Build a brighter future</span>
           </Link>
 
           {/* Desktop Nav */}
@@ -51,7 +52,7 @@ export function Navigation() {
 
           <div className="flex items-center gap-4">
             <Link href="/contact" className="hidden sm:flex signature-gradient text-on-primary px-8 py-3 rounded-full font-bold text-sm hover:opacity-80 transition-all active:scale-95">
-              Get Started
+              Nhận tư vấn
             </Link>
 
             {/* Mobile Toggle */}
@@ -103,9 +104,10 @@ export function Navigation() {
             >
               <div className="h-px bg-outline-variant/30" />
               <div className="space-y-4">
-                <p className="text-sm font-bold text-outline uppercase tracking-widest">Connect</p>
+                <p className="text-sm font-bold text-outline uppercase tracking-widest">Liên hệ</p>
                 <div className="flex flex-col gap-4">
-                  <a href={`mailto:${data.company.email}`} className="text-xl font-bold text-on-surface-variant">{data.company.email}</a>
+                  <a href={`tel:${data.company.phone}`} className="text-xl font-bold text-on-surface-variant">{data.company.phone}</a>
+                  <a href={`mailto:${data.company.email}`} className="text-on-surface-variant/80">{data.company.email}</a>
                   <p className="text-on-surface-variant/60">{data.company.address}</p>
                 </div>
               </div>
@@ -113,7 +115,7 @@ export function Navigation() {
                 href="/contact"
                 className="w-full signature-gradient text-white py-6 rounded-2xl font-bold text-xl flex items-center justify-center gap-2 group"
               >
-                Let's Talk
+                Tư vấn ngay
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </Link>
             </motion.div>

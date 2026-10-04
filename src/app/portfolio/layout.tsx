@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "View Hasync's latest projects in FinTech, Data Science, Enterprise solutions, and Blockchain infrastructure.",
+  title: "Dự án",
+  description: "Các hướng triển khai website, chatbot, AI tool và automation tiêu biểu của Elysium.",
   openGraph: {
-    title: "Our Work & Case Studies | Hasync",
-    description: "Discover how we deliver competitive advantages through precision engineering and modular software architecture.",
+    title: "Dự án Website & AI | Elysium",
+    description: "Khám phá các giải pháp số Elysium triển khai cho shop, cá nhân và doanh nghiệp.",
   },
 };
 

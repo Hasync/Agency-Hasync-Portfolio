@@ -20,7 +20,7 @@ export function Footer() {
         </div>
 
         <div className="space-y-4">
-          <p className="font-bold text-on-surface uppercase tracking-widest text-xs">Services</p>
+          <p className="font-bold text-on-surface uppercase tracking-widest text-xs">Dịch vụ</p>
           <ul className="space-y-2">
             {data.services.list.map(service => (
               <li key={service.title}>
@@ -33,22 +33,24 @@ export function Footer() {
         </div>
 
         <div className="space-y-4">
-          <p className="font-bold text-on-surface uppercase tracking-widest text-xs">Resources</p>
+          <p className="font-bold text-on-surface uppercase tracking-widest text-xs">Liên kết</p>
           <ul className="space-y-2">
-            <li><Link className="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform inline-block" href="#">Privacy Policy</Link></li>
-            <li><Link className="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform inline-block" href="#">Terms of Service</Link></li>
-            <li><Link className="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform inline-block" href="/careers">Careers</Link></li>
-            <li><Link className="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform inline-block" href="/contact">Contact Us</Link></li>
+            <li><Link className="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform inline-block" href="/portfolio">Dự án mẫu</Link></li>
+            <li><Link className="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform inline-block" href="/services#pricing">Gói dịch vụ</Link></li>
+            <li><Link className="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform inline-block" href="/insights">Góc chia sẻ</Link></li>
+            <li><Link className="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform inline-block" href="/contact">Liên hệ</Link></li>
           </ul>
         </div>
 
         <div className="space-y-6">
-          <p className="font-bold text-on-surface uppercase tracking-widest text-xs">Newsletter</p>
+          <p className="font-bold text-on-surface uppercase tracking-widest text-xs">Tư vấn nhanh</p>
           <div className="flex gap-2">
-            <input className="bg-white border-none rounded-full px-4 py-2 w-full focus:ring-2 focus:ring-primary text-sm shadow-sm" placeholder="Your email" type="email" />
-            <button className="signature-gradient text-white p-2.5 rounded-full hover:opacity-90 transition-all active:scale-95">
+            <a href={`tel:${data.company.phone}`} className="bg-white rounded-full px-4 py-2 w-full text-primary font-bold shadow-sm hover:opacity-80 transition-all">
+              {data.company.phone}
+            </a>
+            <Link href="/contact" className="signature-gradient text-white p-2.5 rounded-full hover:opacity-90 transition-all active:scale-95">
               <Send className="w-5 h-5" />
-            </button>
+            </Link>
           </div>
           <p className="text-xs text-on-surface-variant/60">{data.company.copyright}</p>
         </div>

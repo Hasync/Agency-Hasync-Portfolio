@@ -3,6 +3,7 @@ import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { FloatingCTA } from "@/components/FloatingCTA";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -16,41 +17,39 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: {
-    default: "Hasync | Technical Excellence in Software Engineering",
-    template: "%s | Hasync"
+    default: "Elysium | Thiết kế Website & AI",
+    template: "%s | Elysium"
   },
-  description: "Hasync is a premium software engineering agency. We build high-performance Web, Mobile, and AI solutions for global innovators and ambitious companies.",
-  keywords: ["Software Engineering", "Web Development", "Mobile Apps", "AI Solutions", "Next.js", "React", "Digital Transformation", "Technical Consulting"],
-  authors: [{ name: "Hasync Team", url: "https://hasync.vn" }],
-  creator: "Hasync",
-  publisher: "Hasync",
+  description: "Elysium thiết kế website, chatbot, AI tool và automation theo yêu cầu cho cá nhân, shop và doanh nghiệp.",
+  keywords: ["Thiết kế Website", "AI Tool", "Chatbot", "Automation", "Next.js", "React", "Elysium", "Đồ án AI", "Data"],
+  authors: [{ name: "Elysium Team" }],
+  creator: "Elysium",
+  publisher: "Elysium",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   openGraph: {
-    title: "Hasync | Technical Excellence in Software Engineering",
-    description: "Architecting high-performance digital solutions. We specialize in Next.js, AI integration, and scalable cloud architectures.",
-    url: "https://hasync.vn",
-    siteName: "Hasync Agency",
+    title: "Elysium | Thiết kế Website & AI",
+    description: "Thiết kế website, chatbot, AI tool và automation theo yêu cầu cho cá nhân, shop và doanh nghiệp.",
+    siteName: "Elysium",
     images: [
       {
-        url: "/og-image.png", // User should add this image
+        url: "/bannerHero.png",
         width: 1200,
         height: 630,
-        alt: "Hasync Agency - Technical Excellence",
+        alt: "Elysium - Thiết kế Website & AI",
       },
     ],
-    locale: "en_US",
+    locale: "vi_VN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hasync | Technical Excellence",
-    description: "Building the future of digital products with precision and scale.",
-    images: ["/og-image.png"],
-    creator: "@hasync",
+    title: "Elysium | Thiết kế Website & AI",
+    description: "Website, chatbot, AI tool và automation theo yêu cầu.",
+    images: ["/bannerHero.png"],
   },
   robots: {
     index: true,
@@ -71,37 +70,29 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth" data-scroll-behavior="smooth">
+    <html lang="vi" className="scroll-smooth" data-scroll-behavior="smooth">
       <body className={`${inter.variable} ${manrope.variable} font-inter bg-background text-on-surface antialiased selection:bg-primary-container selection:text-white`}>
         <Navigation />
+        <FloatingCTA />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Hasync",
-              "url": "https://hasync.vn",
-              "logo": "https://hasync.vn/hasync.png",
-              "description": "Premium software engineering agency specializing in Web, Mobile, and AI solutions.",
+              "name": "Elysium",
+              "logo": "/bannerHero.png",
+              "description": "Thiết kế website, chatbot, AI tool và automation theo yêu cầu cho cá nhân, shop và doanh nghiệp.",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "1200 Tech Boulevard, Suite 400",
-                "addressLocality": "San Francisco",
-                "addressRegion": "CA",
-                "postalCode": "94107",
-                "addressCountry": "US"
+                "addressCountry": "VN"
               },
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+1 (555) 123-4567",
+                "telephone": "0338994373",
                 "contactType": "customer service",
-                "email": "hello@hasync.vn"
-              },
-              "sameAs": [
-                "https://twitter.com/hasync",
-                "https://github.com/hasync"
-              ]
+                "email": "elysium.techvn@gmail.com"
+              }
             }),
           }}
         />

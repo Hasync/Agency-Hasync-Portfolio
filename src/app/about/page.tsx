@@ -85,8 +85,8 @@ export default function AboutPage() {
       <section className="py-32 bg-surface">
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="font-manrope font-bold text-4xl text-on-surface mb-4">The Minds Behind Lumina</h2>
-            <p className="text-on-surface-variant max-w-2xl mx-auto">A collective of architects, designers, and visionaries committed to technical integrity.</p>
+            <h2 className="font-manrope font-bold text-4xl text-on-surface mb-4">Đội ngũ phía sau Elysium</h2>
+            <p className="text-on-surface-variant max-w-2xl mx-auto">Một đội ngũ nhỏ, linh hoạt, tập trung vào website, AI ứng dụng và tự động hóa thực dụng.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {about.leadership.map((leader) => (

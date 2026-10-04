@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import content from "@/data/content.json";
 
 export default function PortfolioPage() {
@@ -159,11 +160,11 @@ export default function PortfolioPage() {
           <div className="md:col-span-12 flex flex-col md:flex-row items-center gap-8 bg-surface-container-high rounded-3xl p-12 overflow-hidden relative border border-outline-variant/10 shadow-sm">
             <div className="absolute -right-20 -top-20 w-96 h-96 bg-tertiary-container/20 rounded-full blur-3xl"></div>
             <div className="flex-1 z-10">
-              <h2 className="font-manrope text-3xl font-extrabold tracking-tight mb-4">Your project could be the <span className="text-tertiary">next blueprint</span>.</h2>
-              <p className="text-on-surface-variant max-w-xl">We are currently accepting new partnerships for Q4 2024. Let's discuss your technical vision.</p>
+              <h2 className="font-manrope text-3xl font-extrabold tracking-tight mb-4">Dự án của bạn có thể là <span className="text-tertiary">mẫu triển khai tiếp theo</span>.</h2>
+              <p className="text-on-surface-variant max-w-xl">Elysium nhận tư vấn website, chatbot, AI tool và automation theo nhu cầu thực tế của bạn.</p>
             </div>
             <div className="z-10">
-              <button className="btn-primary px-10 py-5 text-lg">Start a Conversation</button>
+              <Link href="/contact" className="btn-primary px-10 py-5 text-lg">Nhận tư vấn</Link>
             </div>
           </div>
         </div>

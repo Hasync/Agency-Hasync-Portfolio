@@ -1,259 +1,268 @@
 {
   "company": {
-    "name": "Hasync.",
-    "shortDescription": "Engineering future-ready software solutions for the world's most ambitious companies.",
-    "email": "hello@luminescent.dev",
-    "phone": "+1 (555) 123-4567",
-    "address": "1200 Tech Boulevard, Suite 400, San Francisco, CA 94107",
-    "copyright": "© 2026 Hasync - Web & Software Studio . All rights reserved."
+    "name": "Elysium",
+    "shortDescription": "Thiết kế Website & AI, chatbot và automation theo yêu cầu cho cá nhân, cửa hàng và doanh nghiệp.",
+    "email": "elysium.techvn@gmail.com",
+    "phone": "0338994373",
+    "address": "Việt Nam - hỗ trợ online toàn quốc",
+    "copyright": "© 2026 Elysium - Thiết kế Website & AI. All rights reserved."
   },
   "navigation": [
-    { "label": "Services", "href": "/services" },
-    { "label": "Portfolio", "href": "/portfolio" },
-    { "label": "About", "href": "/about" },
-    { "label": "Insights", "href": "/insights" }
+    { "label": "Dịch vụ", "href": "/services" },
+    { "label": "Sản phẩm", "href": "/portfolio" },
+    { "label": "Liên hệ", "href": "/contact" }
   ],
   "home": {
     "hero": {
-      "badge": "______FUTURE-DRIVEN INTELLIGENCE",
-      "titlePart1": "Architecting",
-      "titleHighlight": "Digital",
-      "titlePart2": "Transformation.",
-      "description": "We build high-performance Web, Mobile, and AI solutions that define technical excellence. No templates, just engineered precision."
+      "badge": "WEBSITE • AI TOOL • AUTOMATION",
+      "titlePart1": "Elysium",
+      "titleHighlight": "Thiết kế Website & AI",
+      "titlePart2": "theo yêu cầu.",
+      "description": "Chúng tôi xây dựng website, chatbot, công cụ AI và hệ thống tự động hóa giúp cá nhân, cửa hàng và doanh nghiệp vận hành hiệu quả hơn. Chuyên nghiệp, tận tâm, đo được kết quả."
     },
-    "trustedBy": ["Aether", "Nexus", "Crypton", "Vanguard", "OmniHealth"],
-    "portfolioTitle": "Latest Projects",
-    "portfolioSubtitle": "We don't just ship code; we deliver competitive advantages across industries.",
+    "trustedBy": ["Website", "AI Tool", "Chatbot", "Automation", "Data"],
+    "portfolioTitle": "Dự án tiêu biểu",
+    "portfolioSubtitle": "Từ landing page bán hàng đến chatbot và hệ thống AI nội bộ, Elysium tập trung vào giải pháp gọn, đẹp và dùng được ngay.",
     "process": {
-      "title": "Our Process",
-      "description": "Precision engineering meets rapid iteration. We build software that grows with you.",
+      "title": "Quy trình triển khai",
+      "description": "Rõ yêu cầu, làm nhanh, bàn giao dễ vận hành và luôn có hướng tối ưu sau khi ra mắt.",
       "steps": [
         {
-          "title": "Discovery",
-          "description": "We dive deep into your business logic, user needs, and technical constraints."
+          "title": "Tư vấn",
+          "description": "Lắng nghe mục tiêu, khách hàng, quy trình hiện tại và ngân sách để chọn giải pháp phù hợp."
         },
         {
-          "title": "Design",
-          "description": "Crafting user-centric interfaces and scalable system architectures."
+          "title": "Thiết kế",
+          "description": "Xây dựng giao diện, luồng trải nghiệm và kịch bản AI rõ ràng trước khi lập trình."
         },
         {
-          "title": "Development",
-          "description": "Writing clean, robust, and well-documented code across the stack."
+          "title": "Phát triển",
+          "description": "Triển khai website, chatbot, tool AI hoặc automation theo đúng phạm vi đã thống nhất."
         },
         {
-          "title": "Deployment",
-          "description": "Seamless CI/CD pipelines and long-term scaling support."
+          "title": "Bàn giao",
+          "description": "Hướng dẫn sử dụng, tối ưu tốc độ, SEO cơ bản và hỗ trợ chỉnh sửa sau khi nghiệm thu."
         }
       ]
     },
     "testimonial": {
-      "quote": "Luminescent transformed our legacy systems into a modern cloud-native powerhouse. Their attention to technical detail is unmatched in the agency space.",
-      "author": "Marcus Chen",
-      "role": "CTO, Nexus Corp"
+      "quote": "Elysium giúp chúng tôi có website chuyên nghiệp và một chatbot tư vấn tự động, giảm rất nhiều thời gian phản hồi khách hàng.",
+      "author": "Khách hàng doanh nghiệp",
+      "role": "Đối tác triển khai Website & AI"
     }
   },
   "portfolio": {
-    "title": "Our Work",
-    "description": "Explore our defining shipments. We architect solutions that stand the test of scale.",
+    "title": "Dự án đã triển khai",
+    "description": "Các hướng giải pháp Elysium thường xây dựng cho shop, doanh nghiệp nhỏ, sinh viên và đội ngũ vận hành.",
     "projects": [
       {
-        "id": "lumina-banking",
-        "title": "LuminaBanking App",
-        "description": "Custom headless financial implementation with sub-second page loads.",
+        "id": "website-ban-hang",
+        "title": "Website bán hàng & giới thiệu dịch vụ",
+        "description": "Landing page tốc độ cao, chuẩn responsive, tối ưu chuyển đổi và dễ cập nhật nội dung.",
         "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-        "category": "FinTech",
+        "category": "Website",
         "featured": true,
         "type": "tall"
       },
       {
-        "id": "predictive-analytics",
-        "title": "Predictive Analytics Protocol",
-        "description": "Scalable smart contract infrastructure for high-volume data trading.",
+        "id": "ai-chatbot-tu-van",
+        "title": "Chatbot tư vấn tự động",
+        "description": "Bot trả lời FAQ, tư vấn sản phẩm, thu lead và chuyển tiếp cho nhân sự khi cần.",
         "image": "https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-        "category": "Data Science",
+        "category": "AI Chatbot",
         "featured": true,
         "type": "small-blue"
       },
       {
-        "id": "fintech-dash",
-        "title": "Fintech Dashboard",
-        "description": "Real-time analytics portal for modern enterprises.",
+        "id": "tool-ai-noi-bo",
+        "title": "AI tool cho quy trình nội bộ",
+        "description": "Công cụ hỗ trợ viết nội dung, phân loại dữ liệu, tạo báo cáo và xử lý tác vụ lặp lại.",
         "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-        "category": "Enterprise",
+        "category": "AI Tool",
         "featured": true,
         "type": "wide"
       },
       {
-        "id": "web3-infra",
-        "title": "Web3 Infrastructure",
-        "description": "Glow-up for decentralized networks.",
+        "id": "automation-van-hanh",
+        "title": "Automation theo yêu cầu",
+        "description": "Tự động hóa nhập liệu, gửi thông báo, đồng bộ form, sheet, email và các công cụ làm việc.",
         "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-        "category": "Blockchain",
+        "category": "Automation",
         "featured": true,
         "type": "dark"
       }
     ]
   },
   "services": {
-    "title": "Technical Capabilities",
-    "description": "We are a full-stack engineering team capable of building end-to-end platforms.",
+    "title": "Dịch vụ của Elysium",
+    "description": "Giải pháp Website & AI theo yêu cầu, phù hợp từ cá nhân, shop nhỏ đến đội ngũ doanh nghiệp cần tối ưu vận hành.",
     "list": [
       {
-        "title": "Modern Web Development",
-        "description": "React, Next.js architectures optimized for core web vitals.",
+        "title": "Thiết kế Website",
+        "description": "Website giới thiệu, landing page, portfolio, bán hàng và trang doanh nghiệp tối ưu giao diện, tốc độ và SEO cơ bản.",
         "icon": "Layout"
       },
       {
-        "title": "Mobile Engineering",
-        "description": "Native-grade iOS and Android applications.",
-        "icon": "Smartphone"
-      },
-      {
-        "title": "AI & Machine Learning",
-        "description": "Large language model integrations and predictive analytics.",
+        "title": "AI Tool theo yêu cầu",
+        "description": "Xây dựng công cụ AI hỗ trợ viết nội dung, xử lý dữ liệu, tạo báo cáo và tự động hóa nghiệp vụ.",
         "icon": "Cpu"
       },
       {
-        "title": "Cloud Architecture",
-        "description": "AWS and GCP infrastructure automation.",
-        "icon": "Cloud"
+        "title": "Chatbot tư vấn",
+        "description": "Chatbot hỏi đáp, tư vấn sản phẩm, thu thập thông tin khách hàng và hỗ trợ chăm sóc tự động.",
+        "icon": "MessageSquare"
+      },
+      {
+        "title": "Automation vận hành",
+        "description": "Kết nối biểu mẫu, sheet, email và công cụ nội bộ để giảm thao tác thủ công, tiết kiệm thời gian.",
+        "icon": "Settings"
+      },
+      {
+        "title": "Hỗ trợ đồ án CNTT/AI/Data",
+        "description": "Đồng hành xây dựng ý tưởng, giao diện demo, mô hình AI, dashboard dữ liệu và tài liệu trình bày.",
+        "icon": "GraduationCap"
+      },
+      {
+        "title": "Tối ưu cho shop & doanh nghiệp",
+        "description": "Đề xuất giải pháp số hóa phù hợp ngân sách, giúp tăng hiện diện online và hiệu quả vận hành.",
+        "icon": "Users"
       }
     ]
   },
   "about": {
-    "title": "Architecting the Future Together",
-    "description": "We blend high-performance engineering with intentional design to build digital ecosystems that don't just solve problems—they define industries.",
+    "title": "Đội ngũ trẻ xây giải pháp số thực dụng",
+    "description": "Elysium kết hợp tư duy thiết kế, lập trình web và AI ứng dụng để tạo ra sản phẩm dễ dùng, đẹp và phục vụ trực tiếp mục tiêu kinh doanh.",
     "story": {
-      "title": "Our Story",
-      "p1": "Lumina wasn't born in a boardroom; it was forged in the late-night sessions of three developers who believed that code should be as elegant as the hardware it runs on.",
-      "p2": "Since 2018, we've scaled from a boutique studio into a powerhouse agency, serving global disruptors. Our growth is measured not just in headcount, but in the complexity of the challenges we conquer."
+      "title": "Câu chuyện của chúng tôi",
+      "p1": "Elysium bắt đầu từ mong muốn giúp các đội ngũ nhỏ tiếp cận website chuyên nghiệp và công cụ AI mà không cần quy trình phức tạp.",
+      "p2": "Chúng tôi tập trung vào giải pháp vừa đủ, rõ hiệu quả: giao diện chỉn chu, luồng dùng đơn giản, automation giảm việc lặp lại và AI hỗ trợ đúng bài toán."
     },
     "milestones": [
       {
-        "year": "2018",
-        "title": "The Foundation",
-        "description": "Three founders, one shared apartment, and a vision for clean, modular software architecture."
+        "year": "01",
+        "title": "Hiểu bài toán",
+        "description": "Phân tích mục tiêu, khách hàng và quy trình hiện tại trước khi đề xuất giải pháp."
       },
       {
-        "year": "2021",
-        "title": "The Expansion",
-        "description": "Opening our first global office and launching 'The Foundry' design system internal framework."
+        "year": "02",
+        "title": "Làm bản dùng được",
+        "description": "Ưu tiên sản phẩm chạy được, dễ kiểm thử và có thể nâng cấp theo phản hồi thực tế."
       },
       {
-        "year": "2024",
-        "title": "The Legacy",
-        "description": "Leading the shift toward AI-integrated product design for Fortune 500 partners."
+        "year": "03",
+        "title": "Tối ưu dài hạn",
+        "description": "Theo dõi hiệu quả, tinh chỉnh nội dung, tốc độ, AI prompt và quy trình tự động hóa."
       }
     ],
     "leadership": [
       {
-        "name": "Alex Mercer",
-        "role": "Chief Executive Officer",
-        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+        "name": "Elysium Team",
+        "role": "Website & AI Solution",
+        "image": "/bannerHero.png"
       },
       {
-        "name": "Elena Rodriguez",
-        "role": "Head of Design",
-        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+        "name": "Design Squad",
+        "role": "UI/UX & Brand Experience",
+        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&fit=crop&w=400&q=80"
       },
       {
-        "name": "Marcus Chen",
-        "role": "Chief Technology Officer",
-        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+        "name": "AI Squad",
+        "role": "Chatbot & Automation",
+        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&fit=crop&w=400&q=80"
       },
       {
-        "name": "Sarah Jenkins",
-        "role": "VP of Operations",
-        "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+        "name": "Support Squad",
+        "role": "Training & Handover",
+        "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&fit=crop&w=400&q=80"
       }
     ],
     "values": [
       {
-        "title": "Technical Excellence",
-        "description": "We don't cut corners. Our code is built to be scalable, secure, and maintainable for years to come.",
+        "title": "Chuyên nghiệp",
+        "description": "Giao diện chỉn chu, cấu trúc rõ ràng, bàn giao đúng phạm vi và có hướng dẫn sử dụng.",
         "icon": "Terminal"
       },
       {
-        "title": "Human-Centric Design",
-        "description": "Technology is a tool for people. We prioritize empathy and usability in every pixel we place.",
+        "title": "Tận tâm",
+        "description": "Luôn bắt đầu từ bài toán thật, ngân sách thật và khả năng vận hành của khách hàng.",
         "icon": "Users"
       },
       {
-        "title": "Collaboration",
-        "description": "The best solutions emerge from open dialogue between our experts and our partners.",
+        "title": "Hiệu quả",
+        "description": "Mỗi tính năng đều hướng đến tiết kiệm thời gian, tăng chuyển đổi hoặc giảm thao tác thủ công.",
         "icon": "Hub"
       }
     ]
   },
   "insights": {
-    "title": "Technical Perspectives",
-    "description": "Deep dives into architecture, code culture, and the frontier of digital engineering.",
+    "title": "Góc chia sẻ",
+    "description": "Kinh nghiệm thiết kế website, ứng dụng AI và tự động hóa cho cá nhân, shop và doanh nghiệp.",
     "articles": [
       {
-        "slug": "scaling-ai-infrastructure",
-        "title": "Architecting the Future: How Luminescent Scales AI Infrastructures",
-        "excerpt": "A deep dive into our proprietary distributed system architecture that handles petabytes of data for modern generative models while maintaining zero-latency performance.",
-        "author": "Marcus Thorne",
-        "date": "June 24, 2024",
+        "slug": "website-ai-cho-doanh-nghiep-nho",
+        "title": "Doanh nghiệp nhỏ nên bắt đầu với Website & AI như thế nào?",
+        "excerpt": "Một lộ trình gọn để có website giới thiệu, thu lead và chatbot hỗ trợ tư vấn mà không làm phức tạp vận hành.",
+        "author": "Elysium Team",
+        "date": "04/10/2026",
         "image": "https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
       },
       {
-        "slug": "rust-for-microservices",
-        "title": "Beyond the Monolith: Embracing Rust for Critical Microservices",
-        "excerpt": "Explore how we migrated our core payment gateway to Rust to achieve memory safety without compromising on raw execution speed.",
-        "author": "Sarah Chen",
-        "date": "June 12, 2024",
+        "slug": "chatbot-tu-van-ban-hang",
+        "title": "Chatbot tư vấn bán hàng: nên chuẩn bị dữ liệu gì?",
+        "excerpt": "FAQ, danh mục sản phẩm, chính sách và kịch bản chuyển tiếp là nền tảng để bot trả lời đúng và hữu ích.",
+        "author": "Elysium Team",
+        "date": "04/10/2026",
         "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
       },
       {
-        "slug": "llm-quantization-edge",
-        "title": "Quantizing Large Language Models for Edge Deployment",
-        "excerpt": "Our research on bringing GPT-scale intelligence to mobile devices through advanced 4-bit quantization techniques.",
-        "author": "David Miller",
-        "date": "May 28, 2024",
+        "slug": "automation-giam-viec-lap-lai",
+        "title": "5 tác vụ nên tự động hóa trước tiên trong shop online",
+        "excerpt": "Từ form khách hàng, Google Sheet, email xác nhận đến báo cáo cuối ngày - những phần lặp lại nên được tự động hóa sớm.",
+        "author": "Elysium Team",
+        "date": "04/10/2026",
         "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
       },
       {
-        "slug": "cognitive-load-enterprise",
-        "title": "Cognitive Load in Enterprise Software",
-        "excerpt": "Designing for expert users requires a different mental model. Here is how we balance power and simplicity.",
-        "author": "Elena Rodriguez",
-        "date": "June 05, 2024",
+        "slug": "landing-page-chuyen-doi",
+        "title": "Landing page chuyển đổi tốt cần những phần nào?",
+        "excerpt": "Thông điệp rõ, bằng chứng tin cậy, CTA nổi bật và tốc độ tải nhanh là những yếu tố nền tảng.",
+        "author": "Elysium Team",
+        "date": "04/10/2026",
         "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
       },
       {
-        "slug": "zero-trust-architecture",
-        "title": "Zero Trust Architecture in Practice",
-        "excerpt": "How we implement secure identities across multi-cloud environments without degrading developer experience.",
-        "author": "Alex Rivera",
-        "date": "May 15, 2024",
+        "slug": "do-an-ai-data",
+        "title": "Làm demo đồ án AI/Data sao cho dễ trình bày?",
+        "excerpt": "Chọn phạm vi nhỏ, luồng demo rõ, dữ liệu sạch và giao diện minh họa dễ hiểu giúp đồ án thuyết phục hơn.",
+        "author": "Elysium Team",
+        "date": "04/10/2026",
         "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
       }
     ]
   },
   "careers": {
-    "title": "Join the Elite. Build the Impossible.",
-    "description": "We are seeking visionary engineers, designers, and thinkers who thrive on technical complexity and want to redefine the digital landscape.",
+    "title": "Cùng Elysium xây sản phẩm số hữu ích",
+    "description": "Chúng tôi tìm kiếm cộng sự yêu thích thiết kế, lập trình và AI ứng dụng để cùng tạo ra giải pháp thực tế cho khách hàng.",
     "openPositions": [
       {
-        "title": "Senior Full-Stack Engineer",
-        "location": "San Francisco, CA / Remote",
-        "type": "Full-time"
+        "title": "Frontend Developer",
+        "location": "Remote / Việt Nam",
+        "type": "Part-time"
       },
       {
-        "title": "UI/UX Product Designer",
+        "title": "UI/UX Designer",
         "location": "Remote",
-        "type": "Full-time"
+        "type": "Part-time"
       },
       {
-        "title": "Machine Learning Architect",
-        "location": "San Francisco, CA",
-        "type": "Full-time"
+        "title": "AI Automation Builder",
+        "location": "Remote",
+        "type": "Project-based"
       },
       {
-        "title": "Principal Backend Developer (Rust)",
-        "location": "London, UK / Remote",
-        "type": "Contract"
+        "title": "Content & Client Support",
+        "location": "Remote",
+        "type": "Collaborator"
       }
     ]
   }

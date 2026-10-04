@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://hasync.vn/sitemap.xml',
+    sitemap: 'https://elysium.vn/sitemap.xml',
   }
 }

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Services",
-  description: "Explore Hasync's technical capabilities: Modern Web Development, Mobile Engineering, AI & Machine Learning, and Cloud Architecture.",
+  title: "Dịch vụ",
+  description: "Dịch vụ thiết kế website, AI tool, chatbot và automation theo yêu cầu của Elysium.",
   openGraph: {
-    title: "Technical Services & Capabilities | Hasync",
-    description: "We build end-to-end platforms using React, Next.js, AI integrations, and automated cloud infrastructure.",
+    title: "Dịch vụ Website & AI | Elysium",
+    description: "Thiết kế website, chatbot, AI tool và tự động hóa cho cá nhân, shop và doanh nghiệp.",
   },
 };
 

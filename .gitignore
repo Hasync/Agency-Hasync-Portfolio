@@ -24,6 +24,12 @@
 .DS_Store
 *.pem
 
+# local tooling and generated project notes
+/.claude/
+/.specify/
+/docs/
+.mcp.json
+
 # debug
 npm-debug.log*
 yarn-debug.log*

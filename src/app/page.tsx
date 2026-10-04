@@ -6,6 +6,13 @@ import Link from "next/link";
 import Image from "next/image";
 import content from "@/data/content.json";
 
+const kpis = [
+  { value: "300+", label: "lượt tư vấn website & AI" },
+  { value: "120+", label: "mẫu giao diện và demo giải pháp" },
+  { value: "50+", label: "ý tưởng chatbot, tool và automation" },
+  { value: "24h", label: "phản hồi tư vấn ban đầu" },
+];
+
 export default function Home() {
   const { home, portfolio, services, company, about } = content;
 
@@ -61,14 +68,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust Bar */}
-      <section className="bg-surface-container-low py-12">
+      {/* KPI Strip */}
+      <section className="bg-surface-container-low py-14">
         <div className="max-w-7xl mx-auto px-8">
-          <p className="text-center text-xs font-bold uppercase tracking-widest text-outline mb-10">Dịch vụ Elysium tập trung triển khai</p>
-          <div className="flex flex-wrap justify-center gap-12 md:gap-24 opacity-50 hover:opacity-80 transition-all duration-500">
-            {home.trustedBy.map((brand) => (
-              <div key={brand} className="flex items-center gap-2">
-                <div className="font-bold text-xl tracking-tighter">{brand}</div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {kpis.map((kpi) => (
+              <div key={kpi.label} className="bg-white rounded-3xl p-6 text-center border border-outline-variant/20 shadow-sm">
+                <div className="text-3xl md:text-4xl font-manrope font-extrabold text-primary tracking-tight mb-2">{kpi.value}</div>
+                <p className="text-sm text-on-surface-variant leading-relaxed">{kpi.label}</p>
               </div>
             ))}
           </div>

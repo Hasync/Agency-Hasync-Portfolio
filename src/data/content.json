@@ -15,14 +15,14 @@
   "home": {
     "hero": {
       "badge": "WEBSITE • AI TOOL • AUTOMATION",
-      "titlePart1": "Elysium",
-      "titleHighlight": "Thiết kế Website & AI",
-      "titlePart2": "theo yêu cầu.",
-      "description": "Chúng tôi xây dựng website, chatbot, công cụ AI và hệ thống tự động hóa giúp cá nhân, cửa hàng và doanh nghiệp vận hành hiệu quả hơn. Chuyên nghiệp, tận tâm, đo được kết quả."
+      "titlePart1": "Thiết kế Website",
+      "titleHighlight": "& AI Tool",
+      "titlePart2": "giúp bạn bán hàng, tư vấn và vận hành tốt hơn.",
+      "description": "Elysium xây dựng website, chatbot, CRM, hệ thống nội bộ và automation theo ngân sách thực tế cho cá nhân, cửa hàng và doanh nghiệp."
     },
     "trustedBy": ["Website", "AI Tool", "Chatbot", "Automation", "Data"],
-    "portfolioTitle": "Dự án tiêu biểu",
-    "portfolioSubtitle": "Từ landing page bán hàng đến chatbot và hệ thống AI nội bộ, Elysium tập trung vào giải pháp gọn, đẹp và dùng được ngay.",
+    "portfolioTitle": "Mẫu giải pháp Elysium có thể triển khai",
+    "portfolioSubtitle": "Từ bài toán bán hàng, tư vấn đến vận hành nội bộ, Elysium thiết kế đầu ra rõ ràng: giao diện dễ dùng, luồng AI phù hợp và automation có thể chạy ngay.",
     "process": {
       "title": "Quy trình triển khai",
       "description": "Rõ yêu cầu, làm nhanh, bàn giao dễ vận hành và luôn có hướng tối ưu sau khi ra mắt.",
@@ -52,8 +52,8 @@
     }
   },
   "portfolio": {
-    "title": "Dự án đã triển khai",
-    "description": "Các hướng giải pháp Elysium thường xây dựng cho shop, doanh nghiệp nhỏ, sinh viên và đội ngũ vận hành.",
+    "title": "Mẫu giải pháp có thể triển khai",
+    "description": "Các dạng sản phẩm Elysium thường xây dựng cho shop, doanh nghiệp nhỏ, sinh viên và đội ngũ vận hành.",
     "projects": [
       {
         "id": "website-ban-hang",
@@ -90,6 +90,60 @@
         "category": "Automation",
         "featured": true,
         "type": "dark"
+      },
+      {
+        "id": "landing-page-dich-vu",
+        "title": "Landing page dịch vụ",
+        "description": "Trang giới thiệu dịch vụ gọn, tập trung CTA và tối ưu chuyển đổi.",
+        "image": "https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "category": "Landing Page",
+        "featured": false,
+        "type": "standard"
+      },
+      {
+        "id": "website-portfolio-ca-nhan",
+        "title": "Portfolio cá nhân",
+        "description": "Website cá nhân hoặc hồ sơ năng lực với hình ảnh, dự án và thông tin liên hệ.",
+        "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "category": "Website",
+        "featured": false,
+        "type": "standard"
+      },
+      {
+        "id": "dashboard-quan-tri",
+        "title": "Dashboard quản trị",
+        "description": "Giao diện tổng hợp dữ liệu, trạng thái và tác vụ vận hành nội bộ.",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "category": "Dashboard",
+        "featured": false,
+        "type": "standard"
+      },
+      {
+        "id": "crm-mini",
+        "title": "CRM mini",
+        "description": "Công cụ quản lý khách hàng, trạng thái tư vấn và lịch sử liên hệ.",
+        "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "category": "CRM",
+        "featured": false,
+        "type": "standard"
+      },
+      {
+        "id": "demo-ai-data",
+        "title": "Demo AI/Data",
+        "description": "Demo đồ án hoặc công cụ AI/Data có luồng trình bày rõ ràng.",
+        "image": "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "category": "AI/Data",
+        "featured": false,
+        "type": "standard"
+      },
+      {
+        "id": "noi-dung-ai-marketing",
+        "title": "AI content marketing",
+        "description": "Tool hỗ trợ lên ý tưởng, viết nháp và chuẩn hóa nội dung marketing.",
+        "image": "https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "category": "AI Tool",
+        "featured": false,
+        "type": "standard"
       }
     ]
   },

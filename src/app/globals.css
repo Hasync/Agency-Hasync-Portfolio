@@ -74,6 +74,14 @@
     @apply text-on-primary px-8 h-12 rounded-full flex items-center justify-center font-bold text-sm shadow-xl shadow-primary/20 hover:opacity-90 transition-all active:scale-95;
   }
 
+  .btn-attention {
+    animation: cta-pulse 2.4s ease-in-out infinite;
+  }
+
+  .btn-attention:hover {
+    animation-play-state: paused;
+  }
+
   .btn-ghost {
     @apply bg-white border border-outline-variant/30 text-primary px-8 h-12 rounded-full flex items-center justify-center font-bold text-sm hover:bg-surface-container-low transition-all active:scale-95;
   }
@@ -104,6 +112,18 @@
     }
     100% {
       transform: translateX(100%);
+    }
+  }
+
+  @keyframes cta-pulse {
+    0%,
+    100% {
+      transform: scale(1);
+      box-shadow: 0 20px 25px -5px rgb(0 61 155 / 0.2), 0 8px 10px -6px rgb(0 61 155 / 0.2);
+    }
+    50% {
+      transform: scale(1.045);
+      box-shadow: 0 26px 45px -12px rgb(0 82 204 / 0.45), 0 0 0 8px rgb(0 82 204 / 0.08);
     }
   }
 }

@@ -51,7 +51,7 @@ export function Navigation() {
           </nav>
 
           <div className="flex items-center gap-4">
-            <Link href="/contact" className="hidden sm:flex signature-gradient text-on-primary px-8 py-3 rounded-full font-bold text-sm hover:opacity-80 transition-all active:scale-95">
+            <Link href="/contact" className="hidden sm:flex signature-gradient btn-attention text-on-primary px-8 py-3 rounded-full font-bold text-sm hover:opacity-80 transition-all active:scale-95">
               Nhận tư vấn
             </Link>
 

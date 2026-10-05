@@ -1,20 +1,25 @@
 import Link from "next/link";
-import { Share2, Rss, Send } from "lucide-react";
+import { Mail, MessageCircle, Send } from "lucide-react";
 import data from "@/data/content.json";
+
+const messengerUrl = "https://www.facebook.com/profile.php?id=61594988256008";
 
 export function Footer() {
   return (
-    <footer className="w-full rounded-t-4xl mt-20 bg-surface-container-low border-t border-outline-variant/30">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto font-inter text-sm leading-relaxed">
+    <footer className="w-full rounded-t-4xl mt-12 bg-surface-container-low border-t border-outline-variant/30">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 px-8 py-10 max-w-7xl mx-auto font-inter text-sm leading-relaxed">
         <div className="space-y-6">
           <div className="text-xl font-black text-on-surface">{data.company.name}</div>
           <p className="text-on-surface-variant">{data.company.shortDescription}</p>
           <div className="flex gap-4">
-            <a className="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:signature-gradient hover:text-white transition-all" href="#">
-              <Share2 className="w-5 h-5" />
+            <a className="w-10 h-10 rounded-full bg-[#0068ff] flex items-center justify-center text-white hover:opacity-85 transition-all" href={`https://zalo.me/${data.company.phone}`} target="_blank" rel="noreferrer" aria-label="Liên hệ Zalo">
+              <span className="font-sans text-xl font-black leading-none">Z</span>
             </a>
-            <a className="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:signature-gradient hover:text-white transition-all" href="#">
-              <Rss className="w-5 h-5" />
+            <a className="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-[#0084ff] hover:bg-[#0084ff] hover:text-white transition-all" href={messengerUrl} target="_blank" rel="noreferrer" aria-label="Liên hệ Messenger">
+              <MessageCircle className="w-5 h-5" />
+            </a>
+            <a className="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-[#ea4335] hover:bg-[#ea4335] hover:text-white transition-all" href={`mailto:${data.company.email}`} aria-label="Gửi email">
+              <Mail className="w-5 h-5" />
             </a>
           </div>
         </div>

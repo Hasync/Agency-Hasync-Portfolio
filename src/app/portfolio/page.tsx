@@ -1,175 +1,110 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { motion, type Variants } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import content from "@/data/content.json";
 
+const filters = ["Tất cả", "Website", "AI Tool", "Chatbot", "Automation"];
+
+const revealContainer: Variants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.06,
+      delayChildren: 0.03,
+    },
+  },
+};
+
+const revealItem: Variants = {
+  hidden: { opacity: 0, y: 16 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.28, ease: "easeOut" },
+  },
+};
+
 export default function PortfolioPage() {
-  const { portfolio } = content;
+  const { portfolio, company } = content;
 
   return (
-    <main className="overflow-x-hidden">
-      <div className="max-w-7xl mx-auto px-8 pt-40 pb-20">
-        {/* Hero Section: Editorial Headline */}
-        <header className="mb-24 flex flex-col md:flex-row items-end justify-between gap-12">
-          <div className="max-w-3xl">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              className="flex items-center gap-4 mb-6"
-            >
-              <span className="w-12 h-[2px] bg-tertiary"></span>
-              <span className="font-manrope text-tertiary uppercase tracking-widest text-sm font-extrabold">Selected Works</span>
+    <main className="overflow-x-hidden bg-white">
+      <section className="px-6 pt-32 pb-10 md:px-8 md:pt-36 md:pb-12">
+        <motion.div initial="hidden" animate="visible" variants={revealContainer} className="mx-auto max-w-7xl border-b border-outline-variant/25 pb-10">
+          <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+            <div>
+              <motion.span variants={revealItem} className="text-xs font-black uppercase tracking-[0.22em] text-primary">
+                Sản phẩm & demo
+              </motion.span>
+              <motion.h1 variants={revealItem} className="mt-4 max-w-3xl text-4xl font-extrabold tracking-tight text-on-surface md:text-5xl">
+                Gallery sản phẩm website, AI và automation.
+              </motion.h1>
+            </div>
+            <motion.div variants={revealItem} className="max-w-2xl lg:justify-self-end">
+              <p className="text-base leading-relaxed text-on-surface-variant md:text-lg">
+                Tập trung vào hình ảnh, demo và hướng triển khai thực tế. Chọn một mẫu để xem chi tiết và yêu cầu demo phù hợp.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <Link href="#projects" className="btn-primary px-7 py-3">
+                  Xem sản phẩm
+                </Link>
+                <a href={`https://zalo.me/${company.phone}`} target="_blank" rel="noreferrer" className="inline-flex h-12 items-center justify-center rounded-none bg-on-surface px-7 text-sm font-bold text-white transition-all hover:bg-primary active:scale-95">
+                  Nhắn Zalo
+                </a>
+              </div>
             </motion.div>
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-              className="font-manrope text-5xl md:text-7xl font-extrabold text-on-surface tracking-tighter leading-[1.1] mb-8"
-            >
-              Crafting digital <br />
-              <span className="text-primary italic font-medium">monuments</span> in code.
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-              className="text-lg text-on-surface-variant leading-relaxed max-w-xl"
-            >
-              We bridge the gap between technical complexity and human intuition. Explore our portfolio of high-impact solutions across specialized industries.
-            </motion.p>
           </div>
-          {/* Filters: Chip Navigation */}
-          <div className="flex flex-wrap gap-3 justify-end">
-            {["All Projects", "E-commerce", "Fintech", "HealthTech", "AI & Data"].map((filter, idx) => (
-              <button
-                key={filter}
-                className={`px-6 py-2 rounded-full font-semibold text-sm transition-all ${idx === 0 ? 'bg-tertiary-container/10 text-tertiary' : 'text-on-surface-variant hover:bg-surface-container'}`}
-              >
+
+          <motion.div variants={revealItem} className="mt-9 flex flex-wrap gap-x-6 gap-y-2">
+            {filters.map((filter, idx) => (
+              <button key={filter} type="button" className={`text-sm font-bold transition-colors ${idx === 0 ? "text-primary" : "text-on-surface-variant hover:text-primary"}`}>
                 {filter}
               </button>
             ))}
+          </motion.div>
+        </motion.div>
+      </section>
+
+      <section id="projects" className="scroll-mt-28 px-6 pb-16 md:px-8 md:pb-20">
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-120px" }} variants={revealContainer} className="mx-auto grid max-w-7xl gap-x-5 gap-y-10 sm:grid-cols-2 lg:grid-cols-5">
+          {portfolio.projects.map((project) => (
+            <motion.article key={project.id} variants={revealItem}>
+              <Link href={`/portfolio/${project.id}`} className="group block">
+                <div className="relative aspect-[1.08] overflow-hidden bg-surface-container-low">
+                  <Image src={project.image} alt={project.title} fill sizes="(max-width: 768px) 50vw, 240px" className="object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
+                </div>
+                <div className="mt-4 flex items-start justify-between gap-4 border-t border-outline-variant/20 pt-4">
+                  <div>
+                    <span className="text-[0.68rem] font-black uppercase tracking-[0.18em] text-primary/70">{project.category}</span>
+                    <h2 className="mt-2 text-lg font-manrope font-extrabold leading-snug text-on-surface transition-colors group-hover:text-primary md:text-xl">{project.title}</h2>
+                  </div>
+                  <ArrowRight className="mt-1 h-5 w-5 shrink-0 text-primary transition-transform group-hover:translate-x-1" />
+                </div>
+              </Link>
+            </motion.article>
+          ))}
+        </motion.div>
+      </section>
+
+      <section className="px-6 pb-20 md:px-8 md:pb-24">
+        <div className="mx-auto grid max-w-7xl gap-6 border-t border-outline-variant/25 pt-10 md:grid-cols-[1fr_auto] md:items-center">
+          <div>
+            <span className="text-xs font-black uppercase tracking-[0.22em] text-primary">Bắt đầu dự án</span>
+            <h2 className="mt-3 text-3xl font-manrope font-extrabold tracking-tight text-on-surface">Muốn xem demo gần với nhu cầu của bạn?</h2>
           </div>
-        </header>
-
-        {/* Project Grid: Bento/Asymmetrical Style */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-          {/* Project Card 1: Large Featured */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            whileHover={{ y: -5 }}
-            className="md:col-span-8 group relative overflow-hidden rounded-3xl bg-surface-container-low aspect-video md:aspect-auto md:h-[600px] shadow-sm hover:shadow-xl transition-all duration-500"
-          >
-            <Image
-              src={portfolio.projects[0].image}
-              alt={portfolio.projects[0].title}
-              fill
-              sizes="(max-width: 768px) 100vw, 800px"
-              className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-linear-to-t from-on-surface/90 via-on-surface/20 to-transparent"></div>
-            <div className="absolute bottom-0 left-0 p-10 w-full">
-              <span className="font-bold text-sm text-white/70 tracking-widest uppercase mb-4 block">{portfolio.projects[0].category}</span>
-              <h3 className="font-manrope text-4xl font-extrabold text-white mb-4 tracking-tight">{portfolio.projects[0].title}</h3>
-              <p className="opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-400 text-white/80 max-w-md leading-relaxed">
-                {portfolio.projects[0].description}
-              </p>
-            </div>
-          </motion.div>
-
-          {/* Project Card 2: Vertical Small */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            whileHover={{ y: -5 }}
-            className="md:col-span-4 group relative overflow-hidden rounded-3xl bg-surface-container-low aspect-4/5 shadow-sm hover:shadow-xl transition-all duration-500"
-          >
-            <Image
-              src={portfolio.projects[1].image}
-              alt={portfolio.projects[1].title}
-              fill
-              sizes="(max-width: 768px) 100vw, 400px"
-              className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-linear-to-t from-on-surface/90 via-on-surface/20 to-transparent"></div>
-            <div className="absolute bottom-0 left-0 p-8 w-full">
-              <span className="font-bold text-sm text-white/70 tracking-widest uppercase mb-2 block">{portfolio.projects[1].category}</span>
-              <h3 className="font-manrope text-2xl font-extrabold text-white mb-3">{portfolio.projects[1].title}</h3>
-              <p className="opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-400 text-white/80 text-sm leading-relaxed">
-                {portfolio.projects[1].description}
-              </p>
-            </div>
-          </motion.div>
-
-          {/* Project Card 3: Standard Size */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            whileHover={{ y: -5 }}
-            className="md:col-span-4 group relative overflow-hidden rounded-3xl bg-surface-container-low aspect-square shadow-sm hover:shadow-xl transition-all duration-500"
-          >
-            <Image
-              src={portfolio.projects[2].image}
-              alt={portfolio.projects[2].title}
-              fill
-              sizes="(max-width: 768px) 100vw, 400px"
-              className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-linear-to-t from-on-surface/90 via-on-surface/20 to-transparent"></div>
-            <div className="absolute bottom-0 left-0 p-8 w-full">
-              <span className="font-bold text-sm text-white/70 tracking-widest uppercase mb-2 block">{portfolio.projects[2].category}</span>
-              <h3 className="font-manrope text-2xl font-extrabold text-white mb-3">{portfolio.projects[2].title}</h3>
-              <p className="opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-400 text-white/80 text-sm leading-relaxed">
-                {portfolio.projects[2].description}
-              </p>
-            </div>
-          </motion.div>
-
-          {/* Project Card 4: Horizontal Medium */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            whileHover={{ y: -5 }}
-            className="md:col-span-8 group relative overflow-hidden rounded-3xl bg-surface-container-low aspect-video shadow-sm hover:shadow-xl transition-all duration-500"
-          >
-            <Image
-              src={portfolio.projects[3].image}
-              alt={portfolio.projects[3].title}
-              fill
-              sizes="(max-width: 768px) 100vw, 800px"
-              className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-linear-to-t from-on-surface/90 via-on-surface/20 to-transparent"></div>
-            <div className="absolute bottom-0 left-0 p-10 w-full">
-              <span className="font-bold text-sm text-white/70 tracking-widest uppercase mb-4 block">{portfolio.projects[3].category}</span>
-              <h3 className="font-manrope text-3xl font-extrabold text-white mb-4 tracking-tight">{portfolio.projects[3].title}</h3>
-              <p className="opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-400 text-white/80 max-w-md leading-relaxed">
-                {portfolio.projects[3].description}
-              </p>
-            </div>
-          </motion.div>
-
-          {/* Asymmetrical Gap Filler / Call to Action Bento Item */}
-          <div className="md:col-span-12 flex flex-col md:flex-row items-center gap-8 bg-surface-container-high rounded-3xl p-12 overflow-hidden relative border border-outline-variant/10 shadow-sm">
-            <div className="absolute -right-20 -top-20 w-96 h-96 bg-tertiary-container/20 rounded-full blur-3xl"></div>
-            <div className="flex-1 z-10">
-              <h2 className="font-manrope text-3xl font-extrabold tracking-tight mb-4">Dự án của bạn có thể là <span className="text-tertiary">mẫu triển khai tiếp theo</span>.</h2>
-              <p className="text-on-surface-variant max-w-xl">Elysium nhận tư vấn website, chatbot, AI tool và automation theo nhu cầu thực tế của bạn.</p>
-            </div>
-            <div className="z-10">
-              <Link href="/contact" className="btn-primary px-10 py-5 text-lg">Nhận tư vấn</Link>
-            </div>
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <Link href="/contact" className="btn-primary justify-center px-7 py-3">
+              Nhận tư vấn
+            </Link>
+            <a href={`https://zalo.me/${company.phone}`} target="_blank" rel="noreferrer" className="inline-flex h-12 items-center justify-center rounded-none bg-on-surface px-7 text-sm font-bold text-white transition-all hover:bg-primary active:scale-95">
+              Nhắn Zalo
+            </a>
           </div>
         </div>
-      </div>
+      </section>
     </main>
   );
 }
-
